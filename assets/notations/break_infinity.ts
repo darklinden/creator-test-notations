@@ -754,6 +754,14 @@ export default class Decimal {
     return this.m + "e" + (this.e >= 0 ? "+" : "") + this.e;
   }
 
+  public isNaN(): boolean {
+    return isNaN(this.m) || isNaN(this.e);
+  }
+
+  public isInfinity() {
+    return (this.e >= EXP_LIMIT);
+  }
+
   public toExponential(places: number) {
     // https://stackoverflow.com/a/37425022
 
