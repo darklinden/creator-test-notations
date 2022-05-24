@@ -1,4 +1,4 @@
-import { padEnd } from "./pad-end";
+import { padEnd } from "./pad-string";
 
 // For example: if two exponents are more than 17 apart,
 // consider adding them together pointless, just return the larger one

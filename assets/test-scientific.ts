@@ -6,8 +6,8 @@ import { ScientificNotation } from "./notations/scientific";
 import { default as bigInt } from 'big-integer';
 
 
-@ccclass('test_notations')
-export class test_notations extends Component {
+@ccclass('testscientific')
+export class testscientific extends Component {
 
     private d: bigInt.BigInteger = bigInt('1');
 
